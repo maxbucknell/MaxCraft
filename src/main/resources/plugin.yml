@@ -1,0 +1,8 @@
+name: FirstPlugin
+author: maxbucknell
+version: 1.0
+main: com.maxbucknell.minecraft.Plugin
+commands:
+    mbspawnpoint:
+        description: Set personal spawn location
+        usage: /<command> <player>
