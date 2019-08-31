@@ -13,8 +13,6 @@ public final class MaxCraft extends JavaPlugin
 
         this.getCommand("mbspawnpoint").setExecutor(new SpawnPointCommand(console));
 
-        SpawnLocationSharable sls = new SpawnLocationSharable();
-
         this.getServer().getPluginManager().registerEvents(new MVRespawnEventListener(), this);
     }
 }

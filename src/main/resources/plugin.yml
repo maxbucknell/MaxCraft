@@ -1,7 +1,7 @@
-name: FirstPlugin
+name: MaxCraft
 author: maxbucknell
-version: 1.0
-main: com.maxbucknell.minecraft.Plugin
+version: 0.1.0
+main: com.maxbucknell.minecraft.MaxCraft
 commands:
     mbspawnpoint:
         description: Set personal spawn location

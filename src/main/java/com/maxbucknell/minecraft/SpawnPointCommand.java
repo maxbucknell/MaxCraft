@@ -21,12 +21,11 @@ public final class SpawnPointCommand implements CommandExecutor
     {
         if (command.getName().equalsIgnoreCase("mbspawnpoint")) {
             console.sendMessage(String.format("[%s]: %s: %s", sender.getClass().getName(), label, String.join(", ", args)));
-        }
 
-        if (sender instanceof Player) {
-            Player player = (Player) sender;
-            SpawnLocationSharable.setPlayerSpawnLocation(player, player.getLocation());
-            player.sendMessage("Set spawn location");
+            if (sender instanceof Player) {
+                Player player = (Player) sender;
+                SpawnLocationManager.setPlayerSpawnLocation(player, player.getLocation());
+            }
         }
 
         return true;
