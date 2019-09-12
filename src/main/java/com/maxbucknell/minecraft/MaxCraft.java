@@ -12,6 +12,7 @@ public final class MaxCraft extends JavaPlugin
         ConsoleCommandSender console = this.getServer().getConsoleSender();
 
         this.getCommand("mbspawnpoint").setExecutor(new SpawnPointCommand(console));
+        this.getCommand("orient").setExecutor(new OrientCommand());
 
         this.getServer().getPluginManager().registerEvents(new MVRespawnEventListener(), this);
     }

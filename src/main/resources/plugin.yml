@@ -6,3 +6,11 @@ commands:
     mbspawnpoint:
         description: Set personal spawn location
         usage: /<command> <player>
+    orient:
+        description: Orient compass to new location
+        permission: maxcraft.orient
+        usage: /<command> <waypoint>
+permissions:
+    maxcraft.orient:
+        description: Allows players to orient compass.
+        default: true
